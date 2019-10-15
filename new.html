@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拉新</title>
+    <script src="js/flexible.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <style>
+        #app {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .contents {
+            width: 100%;
+            background: #FF8302;
+            min-height: 100vh;
+            overflow: auto;
+        }
+
+        .contents>img {
+            width: 100%;
+            position: absolute;
+            top: 0rem;
+        }
+
+        .rlues-box {
+            position: absolute;
+            right: 0;
+            top: 0.75rem;
+            border: 0.01rem solid #FCCF0F;
+            border-right: none;
+            border-radius: 0.15rem 0 0 0.15rem;
+            padding: .06rem .12rem .06rem .15rem;
+        }
+
+        .list-contents {
+            width: 100%;
+            z-index: 100;
+            margin-top: 128px;
+        }
+
+        .list-item {
+            width: 3.43rem;
+            border-radius: 0.15rem;
+            margin-bottom: 0.15rem;
+        }
+
+        .title {
+            margin: 0.15rem 0;
+        }
+
+        .share-box {
+            width: 100%;
+            margin-bottom: 0.15rem;
+        }
+
+        .box-one {
+            margin-left: 0.26rem;
+        }
+
+        .box-two {
+            margin-right: 0.26rem;
+        }
+
+        .box-one>div,
+        .box-two>div {
+            width: 1.28rem;
+            height: 1.39rem;
+            background: rgba(255, 255, 255, 1);
+            border: 0.01rem solid rgba(252, 165, 75, 1);
+            opacity: 0.5;
+            border-radius: 0.1rem;
+            margin-bottom: 0.16rem;
+        }
+
+        .code-img {
+            width: 0.94rem;
+            height: 0.94rem;
+            background: rgba(244, 241, 241, 1);
+            margin-bottom: 0.08rem;
+            margin-top: 0.17rem;
+        }
+
+        .text-areas {
+            width: 0.94rem;
+            margin-top: 0.16rem;
+        }
+
+        .shares,
+        .copys {
+            background: #FF8302;
+            padding: 0 0;
+            border-radius: 0.14rem;
+            width: 1.2rem;
+            height: 0.28rem;
+            text-align: center;
+            line-height: 0.28rem;
+        }
+
+        .list-item:nth-child(2)>span:first-child {
+            margin-top: 0.25rem;
+            margin-bottom: 0.13rem;
+        }
+
+        .day-title {
+            padding: 0.1rem 1.17rem;
+            border-bottom: 0.01rem solid #FF8302;
+
+        }
+
+        .day {
+            box-shadow: 0rem 0.04rem 0.16rem 0rem rgba(198, 102, 2, 0.15);
+            border-radius: 0rem 0rem 0.1rem 0.1rem;
+            margin-bottom: 0.17rem;
+            padding: 0.1rem;
+        }
+
+        .years,
+        .month {
+            width: 2.8rem;
+        }
+
+        .years {
+            overflow-x: scroll;
+            white-space: nowrap;
+            margin-bottom: 0.16rem;
+        }
+
+        .years>span {
+            margin: 0 0.12rem;
+        }
+
+        .chose {
+            background: #FF8302;
+            color: #fff;
+        }
+
+        .month>span {
+            border-radius: 0.09rem;
+            padding: 0.02rem 0.08rem;
+            margin: 0.05rem;
+        }
+
+        .gather,
+        .tables {
+            width: 3.04rem;
+        }
+
+        .gather {
+            padding: 0.2rem 0;
+        }
+
+        .gather-item>span:first-child {
+            position: absolute;
+            top: 0.28rem;
+        }
+
+        .gather-item>span:last-child {
+            position: absolute;
+            bottom: 0.07rem;
+        }
+
+        .tables>div {
+            padding: 0.22rem 0;
+            border-top: 0.01rem solid rgba(21, 21, 21, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="contents flex col fl-align">
+            <img src="http://img.fqapps.com/fd706757d0aca7494b92f920c82235b5">
+            <span class="rlues-box fz-11 c-ff">拉新规则</span>
+            <div class="list-contents flex col fl-align">
+                <div class="list-item flex col fl-align b-ff">
+                    <span class="title fz-16 c-02">分享拉新</span>
+                    <div class="share-box flex fl-align fl-jsb">
+                        <div class="box-one flex col fl-align">
+                            <div class="flex col fl-align">
+                                <img src="" alt="" class="code-img">
+                                <span class="fz-9">面对面扫码</span>
+                            </div>
+                            <span class="shares fz-11 c-ff">保存分享</span>
+                        </div>
+                        <div class="box-two flex col fl-align">
+                            <div class="flex col fl-align">
+                                <div class="text-areas c-15 fz-12">
+                                    复制这条内容
+                                    ￥45HHF5BVN￥,下载手机淘宝客户端，领新人专享大礼包！
+                                </div>
+                            </div>
+                            <span class="copys fz-11 c-ff">复制邀请链接</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item flex col fl-align b-ff">
+                    <span class="c-16 fz-15">
+                        ￥<span class="fz-35">0.00</span>
+                    </span>
+                    <span class="fz-12 c-15">总拉新结算收益</span>
+                    <div class="m-data flex fl-align fl-jsa">
+                        <div class="flex col fl-align">
+                            <span class="c-16 fz-10">
+                                ￥<span class="fz-23">0.00</span>
+                            </span>
+                            <span class="fz-12 c-15" style="opacity:0.5;">已结算收益</span>
+                        </div>
+                        <div class="flex col fl-align">
+                            <span class="c-16 fz-10">
+                                ￥<span class="fz-23">0.00</span>
+                            </span>
+                            <span class="fz-12 c-15" style="opacity:0.5;">待结算收益</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item flex col fl-align b-ff">
+                    <div class="day-title flex fl-align">
+                        <span class="fz-16 c-02">7月拉新数据</span>
+                        <i class="downs"></i>
+                    </div>
+                    <div class="day b-ff hide">
+                        <div class="years fz-12 c-15">
+                            <span class="active">2019</span>
+                            <span>2018</span>
+                            <span>2017</span>
+                            <span>2016</span>
+                            <span>2015</span>
+                            <span>2015</span>
+                            <span>2015</span>
+                        </div>
+                        <div class="month flex fl-align fz-12 c-15 fl-w">
+                            <span class="chose">1月</span>
+                            <span>3月</span>
+                            <span>7月</span>
+                            <span>8月</span>
+                            <span>9月</span>
+                            <span>10月</span>
+                            <span>11月</span>
+                            <span>10月</span>
+                            <span>11月</span>
+                        </div>
+                        <i class="ups"></i>
+                    </div>
+                    <div class="gather flex fl-align fl-jse fz-12">
+                        <div class="gather-item flex col fl-align">
+                            <span class="c-02">500</span>
+                            <span class="c-ff">7月拉新总收益</span>
+                        </div>
+                        <div class="gather-item flex col fl-align">
+                            <span class="c-02">¥1520</span>
+                            <span class="c-ff">7月拉新总人数</span>
+                        </div>
+                    </div>
+                    <div class="tables">
+                        <div class="flex fl-align fl-jsa">
+                            <div class="tables-item flex col fl-align c-15">
+                                <span class="fz-12" style="opacity:0.5;margin-bottom: 0.14rem;">完成首购用户人数</span>
+                                <span class="fz-15">500</span>
+                            </div>
+                            <div class="tables-item flex col fl-align c-15">
+                                <span class="fz-12" style="opacity:0.5;margin-bottom: 0.14rem;">收益</span>
+                                <span class="fz-15">¥500</span>
+                            </div>
+                        </div>
+                        <div class="flex fl-align fl-jsa">
+                            <div class="tables-item flex col fl-align c-15">
+                                <span class="fz-12" style="opacity:0.5;margin-bottom: 0.14rem;">绑卡用户人数</span>
+                                <span class="fz-15">500</span>
+                            </div>
+                            <div class="tables-item flex col fl-align c-15">
+                                <span class="fz-12" style="opacity:0.5;margin-bottom: 0.14rem;">收益</span>
+                                <span class="fz-15">¥500</span>
+                            </div>
+                        </div>
+                        <div class="flex fl-align fl-jsa">
+                            <div class="tables-item flex col fl-align c-15">
+                                <span class="fz-12" style="opacity:0.5;margin-bottom: 0.14rem;">完成复购人数</span>
+                                <span class="fz-15">500</span>
+                            </div>
+                            <div class="tables-item flex col fl-align c-15">
+                                <span class="fz-12" style="opacity:0.5;margin-bottom: 0.14rem;">收益</span>
+                                <span class="fz-15">¥500</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

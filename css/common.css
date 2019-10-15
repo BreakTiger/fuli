@@ -84,16 +84,65 @@ input {
 }
 
 /* 文字大小 */
-.fz-16{
+.fz-9 {
+    font-size: 0.09rem;
+}
+
+.fz-10 {
+    font-size: 0.1rem;
+}
+
+.fz-11 {
+    font-size: 0.11rem;
+}
+
+.fz-12 {
+    font-size: 0.12rem;
+}
+
+.fz-15 {
+    font-size: 0.15rem;
+}
+
+.fz-16 {
     font-size: 0.16rem;
 }
 
+.fz-23 {
+    font-size: 0.23rem;
+}
+
+.fz-35 {
+    font-size: 0.35rem;
+}
+
 /* 文字颜色 */
-.c-15{
+.c-15 {
     color: #151515;
 }
 
+.c-ff {
+    color: #fff;
+}
+
+.c-02 {
+    color: #FF8302;
+}
+
+.c-16 {
+    color: #FF2C16;
+}
+
+.active {
+    color: #FF8302;
+}
+
 /* 文字粗细 */
-.f-wb{
+.f-wb {
     font-weight: bold;
+}
+
+
+.hide{
+    display: none !important;
 }
