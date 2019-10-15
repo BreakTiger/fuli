@@ -1,0 +1,18 @@
+.plays {
+    display: block;
+    width: 0.44rem;
+    height: 0.44rem;
+    background: url(http://img.fqapps.com/9d594402e2dbd37eb6ef2ffd4c6c57da) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    left: calc((100% - 0.44rem) /2);
+}
+
+.t-bao {
+    display: block;
+    width: 0.16rem;
+    height: 0.16rem;
+    background: url(http://img.fqapps.com/415e20b1fde4b97e52e1768ab721bf81) no-repeat;
+    background-size: 100%;
+    margin-right: 0.09rem;
+}
