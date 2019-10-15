@@ -133,6 +133,18 @@ input {
     color: #FF2C16;
 }
 
+.c-01 {
+    color: #F08E01;
+}
+
+.c-2C {
+    color: #FEA32C;
+}
+
+.c-4C {
+    color: #FF714C;
+}
+
 .active {
     color: #FF8302;
 }
@@ -143,6 +155,10 @@ input {
 }
 
 
-.hide{
+.hide {
     display: none !important;
+}
+
+.m-b15 {
+    margin-bottom: 0.15rem;
 }

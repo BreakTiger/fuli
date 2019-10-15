@@ -48,3 +48,12 @@
     background-size: 100%;
     position: relative;
 }
+
+.stp {
+    display: block;
+    width: 0.73rem;
+    height: 0.19rem;
+    background: url(http://img.fqapps.com/bf21315817f09b54f3ec708708dc0d73) no-repeat center/0.73rem;
+    position: relative;
+    margin-right: 0.04rem;
+}
