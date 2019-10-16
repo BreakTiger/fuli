@@ -108,9 +108,25 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 2
-    });
+    // var swiper = new Swiper('.swiper-container', {
+    //     slidesPerView: 2
+    // });
 </script>
+<script>
+        new Vue({
+            el: "#app",
+            data: {
+    
+            },
+            mounted: function () {
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 2
+                });
+            },
+            methods: {
+    
+            }
+        })
+    </script>
 
 </html>
