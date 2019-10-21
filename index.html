@@ -92,7 +92,7 @@
                         <i class="plays"></i>
                     </div>
 
-                    <div class="swiper-slide flex fl-align">
+                    <div class="swiper-slide flex fl-align" @click="getMore()">
                         查看更多
                     </div>
                 </div>
@@ -134,7 +134,9 @@
             });
         },
         methods: {
-
+            getMore:function(){
+                window.location.href="video.html"
+            }
         }
     })
 </script>

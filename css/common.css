@@ -100,12 +100,21 @@ input {
     font-size: 0.12rem;
 }
 
+.fz-13{
+    font-size: 0.13rem;
+}
+
 .fz-15 {
     font-size: 0.15rem;
 }
 
 .fz-16 {
     font-size: 0.16rem;
+}
+
+
+.fz-17{
+    font-size: 0.17rem;
 }
 
 .fz-23 {
