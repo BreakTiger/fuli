@@ -28,12 +28,23 @@
             width: 1.55rem !important;
             height: 0.9rem;
             position: relative;
+            border-radius: 0.12rem;
         }
 
         .swiper-slide>img {
             width: 100%;
             height: 100%;
         }
+
+        .swiper-slide:last-child {
+            width: 0.25rem !important;
+            text-align: center;
+            font-size: 0.15rem;
+            color: rgba(254, 45, 100, 0.8);
+            background: rgba(255, 214, 225, 1);
+            padding: 0 0.22rem;
+        }
+
 
         .floor-two {
             padding-top: 0.16rem;
@@ -80,6 +91,10 @@
                         <img src="http://img.fqapps.com/8e1dc23946a064c076dd44839da2aff6">
                         <i class="plays"></i>
                     </div>
+
+                    <div class="swiper-slide flex fl-align">
+                        查看更多
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,20 +123,20 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
 <script>
-        new Vue({
-            el: "#app",
-            data: {
-    
-            },
-            mounted: function () {
-                var swiper = new Swiper('.swiper-container', {
-                    slidesPerView: 2
-                });
-            },
-            methods: {
-    
-            }
-        })
-    </script>
+    new Vue({
+        el: "#app",
+        data: {
+
+        },
+        mounted: function () {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 2
+            });
+        },
+        methods: {
+
+        }
+    })
+</script>
 
 </html>
